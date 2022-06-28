@@ -10,11 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
+	
 	public void init(ServletConfig config) throws ServletException {
 		System.out.println("서블릿 생성시 최소 1회 호출");
 	}
@@ -25,9 +26,12 @@ public class IndexServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
-
+	
 	public void destroy() {
 		System.out.println("서블릿 객체 소멸시에 1회 호출");
 	}
+
+
+	
 
 }

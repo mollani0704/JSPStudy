@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -22,7 +23,10 @@
 				</tr>
 				<tr>
 					<th>사용자이름</th>
-					<th><input type="text" name="username"></th>
+					<th><input class="username-input" type="text" name="username"></th>
+				</tr>
+				<tr class="username-check-msg">
+					
 				</tr>
 				<tr>
 					<th>비밀번호</th>
@@ -33,6 +37,6 @@
 			<button type="reset">재작성</button>
 		</form>
 	</div>
-	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script type="text/javascript" src="/static/js/signup.js"></script>
 </body>
 </html>
